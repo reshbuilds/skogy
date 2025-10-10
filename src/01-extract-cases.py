@@ -10,7 +10,7 @@ with zipfile.ZipFile(zip_path, 'r') as zip_ref:
             geopkg_in_zip_path = f"zip://{zip_path}!{file_info.filename}"
             break
 
-# Read the geopackage     
+# Read the spatial data in geopackage     
 gdf = gpd.read_file(geopkg_in_zip_path,layer=None)
 print(gdf.info())
 
