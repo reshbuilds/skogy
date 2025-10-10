@@ -1,0 +1,2 @@
+# skogy
+SKS AI
